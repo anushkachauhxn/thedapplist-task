@@ -1,6 +1,7 @@
 import React from "react";
-import Card from "./components/Card";
 import Navbar from "./components/Navbar";
+import { ChainDropdown, SortByDropdown } from "./components/Dropdowns";
+import Card from "./components/Card";
 
 const App = () => {
   return (
@@ -11,10 +12,22 @@ const App = () => {
           Search results for <span className="font-extrabold">Projects</span>
         </h1>
 
-        <div className="my-6 grid grid-cols-4 gap-12">
+        <div className="mt-6 flex gap-3">
+          <ChainDropdown />
+          <SortByDropdown />
+        </div>
+
+        <div className="my-6 grid grid-cols-4 gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <Card />
           <Card />
           <Card />
+          <Card />
+
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+
           <Card />
           <Card />
           <Card />
