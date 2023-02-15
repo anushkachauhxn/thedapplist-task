@@ -1,18 +1,18 @@
 import React from "react";
 import Logo from "../assets/logo-black.png";
-import SearchIcon from "../assets/search.png";
+import { MenuButton } from "./Buttons";
 
 const Navbar = () => {
   return (
-    <div className="container px-12 py-4 flex justify-between items-center border-b-2">
+    <div className="px-6 sm:px-12 py-4 flex justify-between items-center gap-3 border-b-2">
       <div className="flex items-center gap-8">
-        <div>
+        <div className="min-w-max">
           <a href="#">
             <img src={Logo} alt="logo" />
           </a>
         </div>
 
-        <ul className="flex gap-4 font-medium">
+        <ul className="flex gap-4 font-medium max-sm:hidden">
           <li className="hover:underline">
             <a href="">Products</a>
           </li>
@@ -25,13 +25,17 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="py-1.5 px-3 rounded-3xl bg-[#F7F7F7] border-2 border-solid border-[#EBEBEB] flex gap-2">
-        <img src={SearchIcon} alt="" />
+      <div className="px-3 py-1.5 flex items-center gap-2 rounded-3xl bg-[#F7F7F7] border-2 border-solid border-[#EBEBEB] sm:flex-row-reverse">
         <input
           type="search"
-          className="bg-transparent"
-          placeholder="Search here"
+          placeholder="Search Projects"
+          className="bg-transparent w-[150px] lg:w-auto"
         />
+        <span class="material-symbols-rounded">search</span>
+      </div>
+
+      <div className="sm:hidden">
+        <MenuButton />
       </div>
     </div>
   );

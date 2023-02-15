@@ -30,6 +30,14 @@ export const NextButton = ({ handleClick }) => {
   );
 };
 
+export const MenuButton = () => {
+  return (
+    <button className="h-9 w-9 rounded-full border-2 border-solid border-[#EBEBEB] grid place-items-center">
+      <span className="material-symbols-rounded">menu</span>
+    </button>
+  );
+};
+
 export const Views = ({ num }) => {
   return (
     <button
