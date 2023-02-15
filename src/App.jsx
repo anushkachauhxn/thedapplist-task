@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import FilterChain from "./components/FilterChain";
+import FilterBar from "./components/FilterBar";
 import { ChainDropdown, SortByDropdown } from "./components/Dropdowns";
 import Card from "./components/Card";
 
@@ -14,7 +14,7 @@ const App = () => {
         </h1>
 
         <div className="mt-6 flex gap-3 items-center">
-          <FilterChain />
+          <FilterBar />
           <ChainDropdown />
           <SortByDropdown />
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { NextButton, PrevButton } from "./Buttons";
 import { Default } from "./Chips";
 
-const FilterChain = () => {
+const FilterBar = () => {
   const handleNext = () => {
     const filters = document.getElementById("filterBar");
     setTimeout(() => {
@@ -53,4 +53,4 @@ const FilterChain = () => {
   );
 };
 
-export default FilterChain;
+export default FilterBar;
