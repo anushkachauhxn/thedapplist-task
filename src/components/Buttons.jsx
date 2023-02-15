@@ -1,9 +1,25 @@
 import React from "react";
 
-export const ArrowButton = ({ href }) => {
+export const LinkButton = ({ href }) => {
   return (
     <button className="h-9 w-9 rounded-full border-2 border-solid border-[#EBEBEB] grid place-items-center">
       <span className="material-symbols-rounded">arrow_outward</span>
+    </button>
+  );
+};
+
+export const PrevButton = () => {
+  return (
+    <button className="h-9 w-9 z-10 rounded-full bg-white border-2 border-solid border-[#EBEBEB] grid place-items-center">
+      <span class="material-symbols-rounded">chevron_left</span>{" "}
+    </button>
+  );
+};
+
+export const NextButton = () => {
+  return (
+    <button className="h-9 w-9 z-10 rounded-full bg-white border-2 border-solid border-[#EBEBEB] grid place-items-center">
+      <span class="material-symbols-rounded">chevron_right</span>{" "}
     </button>
   );
 };

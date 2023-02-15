@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import FilterChain from "./components/FilterChain";
 import { ChainDropdown, SortByDropdown } from "./components/Dropdowns";
 import Card from "./components/Card";
 
@@ -12,7 +13,8 @@ const App = () => {
           Search results for <span className="font-extrabold">Projects</span>
         </h1>
 
-        <div className="mt-6 flex gap-3">
+        <div className="mt-6 flex gap-3 items-center">
+          <FilterChain />
           <ChainDropdown />
           <SortByDropdown />
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowButton, Likes, Views } from "./Buttons";
+import { LinkButton, Likes, Views } from "./Buttons";
 import { Binance, Ethereum, Polygon } from "./Chips";
 import ProfileImg from "../assets/profile-pic.png";
 
@@ -9,7 +9,7 @@ const Card = () => {
       <div className="h-full p-5 flex flex-col justify-between">
         <div className="flex justify-between">
           <img className="rounded-full" src={ProfileImg} alt="" />
-          <ArrowButton />
+          <LinkButton />
         </div>
 
         <div>

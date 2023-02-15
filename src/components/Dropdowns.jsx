@@ -6,7 +6,7 @@ export const ChainDropdown = () => {
   return (
     <div className="w-fit">
       <button
-        className="px-2.5 py-1 inline-flex justify-center rounded-md border-2 border-solid border-[#EBEBEB]"
+        className="px-2.5 py-1 flex justify-center rounded-md border-2 border-solid border-[#EBEBEB] whitespace-nowrap"
         onClick={() => setVisible(!visible)}
       >
         Select Chain
@@ -39,7 +39,7 @@ export const SortByDropdown = () => {
   return (
     <div className="w-fit">
       <button
-        className="px-2.5 py-1 inline-flex justify-center rounded-md border-2 border-solid border-[#EBEBEB]"
+        className="px-2.5 py-1 flex justify-center rounded-md border-2 border-solid border-[#EBEBEB] whitespace-nowrap"
         onClick={() => setVisible(!visible)}
       >
         Sort By
