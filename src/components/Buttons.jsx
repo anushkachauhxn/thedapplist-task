@@ -8,18 +8,24 @@ export const LinkButton = ({ href }) => {
   );
 };
 
-export const PrevButton = () => {
+export const PrevButton = ({ handleClick }) => {
   return (
-    <button className="h-9 w-9 z-10 rounded-full bg-white border-2 border-solid border-[#EBEBEB] grid place-items-center">
-      <span class="material-symbols-rounded">chevron_left</span>{" "}
+    <button
+      className="p-1.5 z-10 rounded-full bg-white border-2 border-solid border-[#EBEBEB] grid place-items-center"
+      onClick={handleClick}
+    >
+      <span class="material-symbols-rounded">chevron_left</span>
     </button>
   );
 };
 
-export const NextButton = () => {
+export const NextButton = ({ handleClick }) => {
   return (
-    <button className="h-9 w-9 z-10 rounded-full bg-white border-2 border-solid border-[#EBEBEB] grid place-items-center">
-      <span class="material-symbols-rounded">chevron_right</span>{" "}
+    <button
+      className="p-1.5 z-10 rounded-full bg-white border-2 border-solid border-[#EBEBEB] grid place-items-center"
+      onClick={handleClick}
+    >
+      <span class="material-symbols-rounded">chevron_right</span>
     </button>
   );
 };
@@ -47,7 +53,7 @@ export const Likes = ({ num }) => {
   return (
     <button className="px-2.5 py-1 flex justify-center gap-2 rounded-3xl border-2 border-solid border-[#EBEBEB] font-medium">
       <span className="material-symbols-rounded">favorite</span>
-      {num > 1 ? `${num} likes` : `${num} like`}
+      {num == 1 ? `${num} like` : `${num} likes`}
     </button>
   );
 };

@@ -8,7 +8,7 @@ export const Default = ({ label, active = false }) => {
       }`}
     >
       <h4
-        className={`text-sm font-medium  ${
+        className={`text-sm font-medium whitespace-nowrap ${
           active ? "text-[#FFF]" : "text-[#000000]"
         }`}
       >
