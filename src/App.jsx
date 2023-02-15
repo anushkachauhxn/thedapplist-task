@@ -8,8 +8,8 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <main className="container px-12 py-6">
-        <h1 className="text-3xl">
+      <main className="container px-6 sm:px-12 py-6">
+        <h1 className="text-3xl max-sm:hidden">
           Search results for <span className="font-extrabold">Projects</span>
         </h1>
 
@@ -19,7 +19,7 @@ const App = () => {
           <SortByDropdown />
         </div>
 
-        <div className="my-6 grid grid-cols-4 gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="my-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
           <Card />
           <Card />
           <Card />
