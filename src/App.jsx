@@ -21,7 +21,22 @@ const App = () => {
         </div>
 
         <div className="flex gap-3 items-center sm:hidden">
-          <CategoriesDrawer categories={["Defi", "Metaverse", "NFT"]} />
+          <CategoriesDrawer
+            categories={[
+              "Defi",
+              "Metaverse",
+              "NFT",
+              "Defi",
+              "Metaverse",
+              "NFT",
+              "Defi",
+              "Metaverse",
+              "NFT",
+              "Defi",
+              "Metaverse",
+              "NFT",
+            ]}
+          />
           <ChainDropdown />
         </div>
 
