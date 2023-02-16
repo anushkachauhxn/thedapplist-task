@@ -14,7 +14,7 @@ export const PrevButton = ({ handleClick }) => {
       className="p-1.5 z-10 rounded-full bg-white border-2 border-solid border-[#EBEBEB] grid place-items-center"
       onClick={handleClick}
     >
-      <span class="material-symbols-rounded">chevron_left</span>
+      <span className="material-symbols-rounded">chevron_left</span>
     </button>
   );
 };
@@ -25,7 +25,7 @@ export const NextButton = ({ handleClick }) => {
       className="p-1.5 z-10 rounded-full bg-white border-2 border-solid border-[#EBEBEB] grid place-items-center"
       onClick={handleClick}
     >
-      <span class="material-symbols-rounded">chevron_right</span>
+      <span className="material-symbols-rounded">chevron_right</span>
     </button>
   );
 };
@@ -34,6 +34,17 @@ export const MenuButton = () => {
   return (
     <button className="h-9 w-9 rounded-full border-2 border-solid border-[#EBEBEB] grid place-items-center">
       <span className="material-symbols-rounded">menu</span>
+    </button>
+  );
+};
+
+export const CloseButton = ({ handleClick }) => {
+  return (
+    <button
+      className="h-8 w-8 rounded-full bg-[#F7F7F7] text-[#6B6B6B] grid place-items-center"
+      onClick={handleClick}
+    >
+      <span className="material-symbols-rounded text-[20px]">close</span>
     </button>
   );
 };
