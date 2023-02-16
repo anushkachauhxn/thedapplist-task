@@ -18,7 +18,7 @@ const FilterBar = () => {
   };
 
   return (
-    <div className="mr-2 w-[80%] flex items-center max-sm:hidden">
+    <div className="mr-2 w-[80%] flex items-center">
       <PrevButton handleClick={handlePrev} />
 
       <div

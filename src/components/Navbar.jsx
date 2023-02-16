@@ -31,7 +31,7 @@ const Navbar = () => {
           placeholder="Search Projects"
           className="bg-transparent w-[150px] lg:w-auto"
         />
-        <span class="material-symbols-rounded">search</span>
+        <span className="material-symbols-rounded">search</span>
       </div>
 
       <div className="sm:hidden">
