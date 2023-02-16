@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../assets/logo-black.png";
+import MobLogo from "../assets/mobile-logo.png";
 import { MenuButton } from "./Buttons";
 
 const Navbar = () => {
@@ -8,7 +9,8 @@ const Navbar = () => {
       <div className="flex items-center gap-8">
         <div className="min-w-max">
           <a href="#">
-            <img src={Logo} alt="logo" />
+            <img className="max-sm:hidden" src={Logo} alt="logo" />
+            <img className="sm:hidden" src={MobLogo} alt="logo" />
           </a>
         </div>
 
